@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/roleradar");
-    console.log("MongoDB connected ✅");
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log("MongoDB Connected ✅");
   } catch (error) {
-    console.error("DB error:", error);
-    process.exit(1);
+    console.log("MongoDB Error:", error.message);
+    // ❗ Don't crash app
   }
 };
 
