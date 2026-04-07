@@ -12,7 +12,7 @@ connectDB();
 
 // ✅ Middlewares
 app.use(cors({
-  origin: "https://role-rador.vercel.app/", // allow all (for now)
+  origin: "https://role-rador.vercel.app", // allow all (for now)
   credentials: true
 }));
 
