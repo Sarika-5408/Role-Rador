@@ -94,8 +94,8 @@ npm run dev   # Development (with nodemon)
 npm start     # Production
 ```
 
-Backend will run on ${http://localhost:5000}  
-Test health: ${http://localhost:5000}/health
+Backend will run on ${https://role-rador-backend.onrender.com  
+Test health: ${https://role-rador-backend.onrender.com/health
 
 ---
 
@@ -108,7 +108,7 @@ cd frontend
 npm install
 
 # Configure environment
-echo "NEXT_PUBLIC_API_URL=${http://localhost:5000}" > .env.local
+echo "NEXT_PUBLIC_API_URL=${https://role-rador-backend.onrender.com" > .env.local
 ```
 
 ### Start frontend:
@@ -243,15 +243,15 @@ role-radar/
 
 ```bash
 # Health check
-curl ${http://localhost:5000}/health
+curl ${https://role-rador-backend.onrender.com/health
 
 # Sign up
-curl -X POST ${http://localhost:5000}/api/auth/signup \
+curl -X POST ${https://role-rador-backend.onrender.com/api/auth/signup \
   -H "Content-Type: application/json" \
   -d '{"name":"Test User","email":"test@test.com","password":"TestPass1"}'
 
 # Search jobs (requires auth cookie)
-curl ${http://localhost:5000}/api/jobs/search?keywords=react&country=United+States \
+curl ${https://role-rador-backend.onrender.com/api/jobs/search?keywords=react&country=United+States \
   --cookie "accessToken=YOUR_TOKEN"
 ```
 

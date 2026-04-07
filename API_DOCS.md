@@ -1,6 +1,6 @@
 # Role Radar — API Documentation
 
-Base URL: http://localhost:5000/api` (dev) | `https://your-app.onrender.com/api` (prod)
+Base URL: https://role-rador-backend.onrender.com/api` (dev) | `https://your-app.onrender.com/api` (prod)
 
 All authenticated routes require a valid `accessToken` HTTP-only cookie (set automatically on login).
 

@@ -154,7 +154,7 @@ mkdir -p logs uploads
 # Edit .env with your values (see Environment Variables section)
 
 cd ../frontend
-echo "NEXT_PUBLIC_API_URL=${http://localhost:5000}" > .env.local
+echo "NEXT_PUBLIC_API_URL=${https://role-rador-backend.onrender.com" > .env.local
 ```
 
 ### Step 3 — Run both servers
@@ -283,8 +283,8 @@ MAX_FILE_SIZE_MB=2
 | What | URL |
 |------|-----|
 | **Main Website** | **http://localhost:3000** |
-| API Server | ${http://localhost:5000} |
-| Health Check | ${http://localhost:5000}/health |
+| API Server | ${https://role-rador-backend.onrender.com |
+| Health Check | ${https://role-rador-backend.onrender.com/health |
 
 ### All Page URLs
 

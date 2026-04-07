@@ -39,7 +39,7 @@ function EditResume() {
       setLoading(true);
 
       const res = await axios.post(
-         "http://localhost:5000}/api/resume/upload",
+         "https://role-rador-backend.onrender.com/api/resume/upload",
         formData,
         {
           headers: {
