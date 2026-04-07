@@ -6,7 +6,7 @@ const connectDB = require("./config/db");
 const { authenticate } = require("./middleware/auth");
 
 const app = express();
-
+console.log("ENV CHECK:", process.env.MONGO_URI ? "FOUND" : "MISSING");
 // ✅ Connect DB (safe)
 connectDB();
 
