@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Login from "./pages/Login";
-import Login from "./pages/Register";
+import Register from "./pages/Register"; // ✅ correct
 import Dashboard from "./pages/Dashboard";
 import CreateResume from "./pages/CreateResume";
 import EditResume from "./pages/EditResume";
@@ -9,12 +9,19 @@ import ResumeResult from "./ResumeResult";
 import JobVacancies from "./pages/JobVacancies";
 import InterviewPrep from "./pages/InterviewPrep";
 import SavedJobs from "./pages/SavedJobs";
+
 function App() {
   return (
     <Router>
       <Routes>
+        {/* ✅ Default page */}
         <Route path="/" element={<Login />} />
-        <Route path="/" element={<Register/>} />
+
+        {/* ✅ Auth routes */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+
+        {/* ✅ Other pages */}
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/create" element={<CreateResume />} />
         <Route path="/edit" element={<EditResume />} />
