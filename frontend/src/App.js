@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Register from "./pages/Register";
-import Login from "./pages/Login";import Dashboard from "./pages/Dashboard";
+import Login from "./pages/Login";
+import Login from "./pages/Register";
+import Dashboard from "./pages/Dashboard";
 import CreateResume from "./pages/CreateResume";
 import EditResume from "./pages/EditResume";
 import ResumeResult from "./ResumeResult";
@@ -12,8 +13,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Register/>} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/create" element={<CreateResume />} />
         <Route path="/edit" element={<EditResume />} />
